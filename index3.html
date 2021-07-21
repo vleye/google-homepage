@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
     <title>Google</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
     span {
         display: inline;
     }
     li {
         display: inline;
+        margin: 8px;
     }
     .right-side{
         float: right;
-        margin-left: 5px;
+        font-size: .9em;
     }
     div {
         display: flex;
@@ -18,25 +21,66 @@
         align-items: center;
         flex-direction: column;
     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    button {
+        opacity: .6
+    }
+    .center{
+        position: relative;
+        left: 25%;
+    }
+    footer{
+        position: relative;
+        background-color: gray;
+        height: 80px;
+        }
 </style>
 <body>
     <nav>
         <ul>
-            <li>About</li>
-            <li>Store</li>
-            <li class="right-side">Gmail</li>
-            <li class="right-side">Images</li>
-            <li class="right-side">#</li>
-            <li class="right-side">#</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li class="right-side"><a href="#"><span class="material-icons" style="color: rgb(189, 29, 29); transform: scale(1.7);">
+                account_circle
+                </span></a></li>
+            <li class="right-side"><a href="#"><span class="material-icons" style="transform: scale(1.4); opacity: .63;">
+                apps
+                </span></a></li>
+            <li class="right-side"><a href="#">Images</a></li>
+            <li class="right-side"><a href="#">Gmail</a></li>
         </ul>
     </nav>
-<div>
+<div style="height: 770px;">
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-<input type="text">
-<span>
-    <button>Search</button>
-    <button>I'm Feeling Lucky</button>
+<br>
+<div style="display: inline; border: 2px solid rgba(180, 180, 180, 0.363); border-radius: 30px;">
+    <span class="material-icons" style="opacity: .5;">search</span>
+    <input type="text" style="width: 500px; border: none; outline: none; height: 30px;">
+    <img src="mic.png" style="height: 27px;">
+</div>
+<span style="margin: 15px;">
+    <button href="#">Google Search</button>
+    <button href="#">I'm Feeling Lucky</button>
 </span>
 </div>
 </body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+            <li class="center">Carbon neutral since 2007</li>
+            <li class="right-side"><a href="#">Settings</a></li>
+            <li class="right-side"><a href="#">Terms</a></li>
+            <li class="right-side"><a href="#">Privacy</a></li>
+        </ul>
+    </nav>
+</footer>
 </html>
